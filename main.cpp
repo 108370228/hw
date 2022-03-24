@@ -29,8 +29,15 @@ int main(int argc, char *argv[])
 	Triangle triangle;
 	****/
 
+	Circle circle;
+	Triangle triangle;
+
     if (strcmp(argv[1], "rectangle") == 0)
 		shape = &rect;
+	else if (strcmp(argv[1], "triangle") == 0)
+		shape = &triangle;
+	else if (strcmp(argv[1], "circle") == 0)
+		shape = &circle;
 	/**** Uncomment the code after you create class Circle and Triangle in shapes.h
 	else if (strcmp(argv[1], "triangle") == 0)
 		shape = &triangle;
